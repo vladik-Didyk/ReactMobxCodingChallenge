@@ -1,13 +1,75 @@
-.App {
-  text-align: center;
+#root {
+  z-index: -9;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.App {
+  background-color: #A9A9A9	;
+  height: 100vh;
+  padding: 15%;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: url("http://dostupintegra.ru/gallery_gen/5ae135927e63c2fcd9589176a3ba784c_2000x1392.539964476.jpg") 0 0 /100% 100%  no-repeat;
+}
+
+.EditUser {
+  display: flex;
+  width: 100%;
+  position: relative; 
+  border: 2px solid ;
+  padding: 10px;
+ }
+ .EditUser::before {
+  content: '';
+  position: absolute; 
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 2;
+  background: rgba(253, 253, 253, 0.712);
+  filter: blur(5px);
+ }
+
+.Container{
+  z-index: 4;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ageContainer{
+ 
+align-items: flex-end;
+}
+
+label {
+z-index: 4;
+  font-size: 3vh;
+}
+
+input {
+  z-index: 4;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-top: 60px;
+  height: 4vh;
+  max-width: 300px;
+  font-size: 2.5vh;
+  
+ 
+  
+}
+.inputAge{
+  text-align: end;
+}
+.inputAge::placeholder{
+  text-align: end;
+}
+
+.DisplayUserName{
+position: absolute;
+margin-bottom: 10px;
+z-index: 4;
 }

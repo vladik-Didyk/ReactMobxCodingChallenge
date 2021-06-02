@@ -1,6 +1,5 @@
-
 export default class UserModel {
-  constructor(public age: number, public name: string) {}
+  constructor(public age: number| string, public name: string) {}
 }
 
 
